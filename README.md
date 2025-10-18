@@ -42,7 +42,7 @@ The system includes a **React frontend**, **Node.js + Express backend**, and **M
 - **Frontend:** React.js  
 - **Backend:** Node.js + Express  
 - **Database:** MongoDB  
-- **Machine Learning:** Python ML model (TensorFlow/PyTorch or as applicable)  
+- **Machine Learning:** Python ML model (TensorFlow/PyTorch)  
 - **API Communication:** RESTful API  
 - **Styling & UX:** CSS, HTML  
 
