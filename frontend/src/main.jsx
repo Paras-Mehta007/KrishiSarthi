@@ -1,0 +1,54 @@
+import React, { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, RouterProvider, Route, createRoutesFromElements } from 'react-router-dom'
+import './index.css'
+import App from './App'
+import './i18n'
+
+import { Home } from './components/Home/Home'
+import { Login } from './components/Login/Login'
+import { Signup } from './components/SignUp/SignUp'
+import { About } from './components/About/About'
+
+import {Scanner} from './components/PlantDisease/Scanner'
+import { CropRecommendation } from './components/CropRecommendation/CropRecommendation'
+
+import {Chatbot} from './components/Chatbot/Chatbot'
+import {Landingpage} from './components/Landingpage/Landingpage'
+
+
+
+ 
+
+import { HeatmapProvider } from './contexts/HeatmapContext'
+import { DynamicHeatMap } from './components/HeatMap/DynamicHeatMap'
+
+
+
+import ContactPage from './components/Contacts/Contacts'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route index element={<Landingpage />} />
+      <Route index element={<Home />} />
+      <Route path="home" element={<Home />} />
+      <Route path="login" element={<Login />} />
+      <Route path="signup" element={<Signup />} />
+      <Route path="heatmap" element={<DynamicHeatMap />} />  {}
+      <Route path="scanner" element={<Scanner />} />
+      <Route path="contact" element={<ContactPage />} />
+      <Route path="about" element={<About />} />
+      <Route path="chatbot" element={<Chatbot />} />
+      <Route path="crop-recommendation" element={<CropRecommendation />} />
+    </Route>
+  )
+)
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+      <HeatmapProvider>
+        <RouterProvider router={router} />
+      </HeatmapProvider>
+  </StrictMode>
+)
