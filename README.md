@@ -53,14 +53,6 @@ The system includes a **React frontend**, **Node.js + Express backend**, and **M
 - **Database:** MongoDB  
 - **Machine Learning:** Python ML model (TensorFlow/PyTorch)  
 - **API Communication:** RESTful API  
-- **Styling & UX:** CSS, HTML  
+- **Styling & UX:** TailwindCSS  
 
----
 
-## 💻 Installation & Usage
-
-### **Frontend**
-```bash
-cd client
-npm install
-npm start
