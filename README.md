@@ -25,9 +25,18 @@ The system includes a **React frontend**, **Node.js + Express backend**, and **M
 
 ---
 
-## 🏗️ Architecture
+## 🖥️ Front Page (Landing Page)
 
-![KrishiSarthi Architecture](frontend/KrishiSarthi.png)
+![KrishiSarthi Front Page](frontend/KrishiSarthi.png)
+
+
+
+## 🏠 Home Page (Dashboard)
+
+![KrishiSarthi Home Page](frontend/Home.png)
+
+
+
 
 **Flow:**
 - **Frontend (React.js)** → User input, displays dashboard, sends API requests  
